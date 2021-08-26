@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --main-color: rgb(21, 36, 124);
+    --secondary-color: rgb(0,150,100);
+    --tertiary-color: rgb(0,188,125);
+}
+
+*, *::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.row{
+    width: 100%;
+}
+
+button{
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section{
+    padding: 5em 0;
+}
+
+.heading{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 300;
+    margin-bottom: 0.3em;
+    color: var(--main-color);
+    position: relative;
+    margin-bottom: 0.3em;
+}
+
+.heading::before{
+    content: attr(data-title);
+    transform: translateY(0.3em);
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+    text-transform: capitalize;
+    font-family: 'Cormorant', serif;
+}
+
+/* navigation section starts */
+
+.navigation-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.nav-logo{
+    font-size: 1.8rem;
+}
+
+.nav-li{
+    display: inline-block;
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.nav-a{
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s ease-out;
+}
+
+.nav-a:hover{
+    color: var(--main-color);
+}
+
+/* navigation section ends */
+
+/* hero section starts */
+
+.hero-section{
+    width: 100%;
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    padding-top: 7em;
+}
+
+.hero-bg{
+    position: absolute;
+    top: 0;
+    right: -2em;
+    width: 65%;
+}
+
+.hero-subheading{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    word-spacing: 0.3rem;
+    font-family: 'Cormorant', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.hero-heading{
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 6rem;
+    margin-bottom: 0.3em;
+    color: var(--main-color);
+}
+
+.hero-mainLine{
+    font-size: 1.1rem;
+    width: 40%;
+    line-height: 2rem;
+    word-spacing: 3px;
+    margin-bottom: 1.5em;
+}
+
+.hero-mainLine span{
+    font-weight: 1000;
+}
+
+.hero-cta{
+    background-color: var(--secondary-color);
+    padding: 0.5em 2em;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s color ease-out;
+}
+
+.hero-cta:hover{
+    background-color: var(--tertiary-color);
+    box-shadow: 3px 3px 10px rgba(0,150,100,0.3);
+}
+
+/* hero section ends */
+
+/* services section starts */
+
+.services-section{
+    background-color: rgb(247,250,252);
+}
+
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service{
+    padding: 2em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 15px -3px rgb(125 59 236 / 10%), 0 4px 6px -2px rgb(125 59 236 / 5%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service:hover{
+    border: 2px solid var(--secondary-color);
+    box-shadow: 6px 6px 6px rgba(0,150,100,0.1);
+    color: var(--secondary-color);
+}
+
+.service svg{
+    margin-bottom: 1.5rem;
+}
+
+/* services section ends */
+
+/* aboutUs section starts */
+
+.aboutUs{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1em;
+}
+
+.aboutUs-img{
+    position: absolute;
+    top: -1.5em;
+    left: -2em;
+    width: 60%;
+}
+
+.aboutUs-container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.aboutUs-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.aboutUs-p{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    word-spacing: 3px;
+    margin-bottom: 1.5em;
+}
+
+
+
+
+/* aboutUs section ends */
