@@ -214,6 +214,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     padding-top: 1em;
+    margin-bottom: 10em;
 }
 
 .aboutUs-img{
@@ -243,6 +244,51 @@ nav{
     line-height: 2rem;
     word-spacing: 3px;
     margin-bottom: 1.5em;
+}
+
+.aboutUs-timeline-container{
+    height: auto;
+}
+
+.aboutUs-timeline{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2em;
+    position: relative;
+}
+
+.aboutUs-timeline::before{
+    position: absolute;
+    height: 100%;
+    width: 1em;
+    background-color: red;
+    top: 0;
+    left: 50%;
+}
+
+.aboutUs-timeline-li{
+    width: 50%;
+    border: 1px solid #fff;
+    background-color: rgb(248, 212, 212);
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.aboutUs-timeline-li:last-child{
+    margin-bottom: 0;
+}
+
+.aboutUs-timeline-li:nth-child(odd){
+    float: left;
+    clear: right;
+}
+
+.aboutUs-timeline-li:nth-child(even){
+    float: right;
+    clear: left;
 }
 
 
