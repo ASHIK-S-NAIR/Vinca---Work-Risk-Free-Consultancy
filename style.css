@@ -268,7 +268,7 @@ nav{
     content: '';
     position: absolute;
     width: 2px;
-    height: 88%;
+    height: 86%;
     left: 50%;
     top: 0;
     background-color: var(--main-color);
