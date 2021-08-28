@@ -78,6 +78,24 @@ a{
     z-index: 10;
 }
 
+.navigation-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-shadow: 0 10px 15px -3px rgb(125 59 236 / 10%), 0 4px 6px -2px rgb(125 59 236 / 5%);
+    transform: translateY(-100%);
+    transition: 0.3s transform ease-out;
+}
+
+.navigation-section.sticky::before{
+    transform: translateY(0%);
+}
+
 nav{
     display: flex;
     justify-content: space-between;
