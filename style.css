@@ -17,6 +17,10 @@
     font-family: 'Manrope', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
     width: 90%;
     margin: auto;
@@ -109,18 +113,22 @@ nav{
 
 .nav-li{
     display: inline-block;
-    margin-left: 2em;
+    margin-left: 1em;
+    padding: 0.5em 1em;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: 1px solid transparent;
+}
+
+.nav-li:hover{
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
 }
 
 .nav-a{
     color: #000;
     font-weight: 500;
     transition: color 0.3s ease-out;
-}
-
-.nav-a:hover{
-    color: var(--main-color);
 }
 
 /* navigation section ends */
@@ -285,7 +293,7 @@ nav{
 .aboutUs-timeline::before{
     content: '';
     position: absolute;
-    width: 2px;
+    width: 1px;
     height: 86%;
     left: 50%;
     top: 0;
@@ -298,7 +306,8 @@ nav{
     box-shadow: 0 10px 15px -3px rgb(125 59 236 / 10%), 0 4px 6px -2px rgb(125 59 236 / 5%);
     padding: 1.5em;
     position: relative;
-    background-color: rgb(247,250,252);
+    background: linear-gradient(90deg, rgb(37, 77, 220), rgb(53,98,255));
+    color: #fff;
 }
 
 .aboutUs-timeline-li:last-child{
@@ -353,5 +362,111 @@ nav{
     line-height: 2rem;
 }
 
-
 /* aboutUs section ends */
+
+/* contactUs section starts */
+
+.contactUs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: url('./Images/contactUs.svg') no-repeat;
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+}
+
+.contactUs::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 1;
+}
+
+.contactUs-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+    padding: 3em;
+}
+
+.contactUs-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.contactUs-p{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    word-spacing: 3px;
+    margin-bottom: 1.5em;
+}
+
+.contactUs-btn{
+    padding: 1em 2em;
+    border: 1px solid #000;
+    font-size: 1.2rem;
+    background-color: #fff;
+    transition: background-color 0.3s ease-out;
+}
+
+.contactUs-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.contactUs-form-section{
+    width: 100%;
+    z-index: 10;
+}
+
+.contactUs-form{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5em;
+    margin: 0 auto;
+    box-shadow: 0 10px 15px -3px rgb(125 59 236 / 10%), 0 4px 6px -2px rgb(125 59 236 / 5%);
+}
+
+.contactUs-form-label{
+    font-size: 1.3rem;
+    margin-bottom: 0.3em;
+}
+
+.contactUs-form-input{
+    width: 100%;
+    height: 3em;
+    margin-bottom: 1.5em;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 0.5em;
+}
+
+.contactUs-form-input-message{
+    height: 10em;
+}
+
+.contactUs-form-btn{
+    background-color: var(--secondary-color);
+    padding: 0.5em 2em;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s color ease-out;
+    width: 10em;
+}
+
+.contactUs-form-btn:hover{
+    background-color: var(--tertiary-color);
+    box-shadow: 3px 3px 10px rgba(0,150,100,0.3);
+}
+
+/* contactUs section ends */

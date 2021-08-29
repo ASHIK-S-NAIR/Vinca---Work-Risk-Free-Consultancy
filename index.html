@@ -15,13 +15,12 @@
     <section class="navigation-section">
         <div class="container">
             <nav>
-                <h1 class="nav-logo">Vinca</h1>
+                <a href="#"><h1 class="nav-logo">Vinca</h1></a>
                 <div class="nav-section">
                     <ul class="nav-ul">
-                        <li class="nav-li"><a href="#" class="nav-a">About us</a></li>
-                        <li class="nav-li"><a href="#" class="nav-a">Services</a></li>
-                        <li class="nav-li"><a href="#" class="nav-a">Contact us</a></li>
-                        <li class="nav-li"><a href="#" class="nav-a">Projects</a></li>
+                        <li class="nav-li"><a href="#services-section" class="nav-a">Services</a></li>
+                        <li class="nav-li"><a href="#aboutUs-section" class="nav-a">About us</a></li>
+                        <li class="nav-li"><a href="#contactUs-section" class="nav-a">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -44,7 +43,7 @@
     <!-- hero-section-ends -->
 
     <!-- services section starts -->
-    <section class="section services-section">
+    <section class="section services-section" id="services-section">
         <div class="container">
             <div class="row heading">
                 <h1 class="heading services-heading" data-title="What we provide">Services</h1>
@@ -145,9 +144,7 @@
     <!-- services section ends -->
 
     <!-- About us section starts -->
-
-    <!-- About us section ends -->
-    <section class="section aboutUs-section">
+    <section class="section aboutUs-section" id="aboutUs-section">
         <div class="container">
             <div class="row">
                 <h1 class="heading aboutUs-heading" data-title="Who we are">About Us</h1>
@@ -210,6 +207,36 @@
            </div>
         </div>
     </section>
+    <!-- About us section ends -->
+
+    <!-- contact us section starts -->
+    <section class="contactUs-section section" id="contactUs-section">
+        <div class="container">
+            <div class="row">
+                <h1 class="heading contactUs-heading" data-title="How can we talk">Contact Us</h1>
+            </div>
+            <div class="row contactUs">
+                <div class="contactUs-info">
+                    <h2 class="contactUs-title">Need any Consultancy Service ?</h2>
+                    <p class="contactUs-p">Feel free to talk to us, we are always ready to help clear your doubts</p>
+                    <button class="contactUs-btn">vincaconsultancy@vinca.com</button>
+                </div>
+                <div class="contactUs-form-section">
+                    <form action="" class="contactUs-form">
+                        <label for="email" class="contactUs-form-label">email</label>
+                        <input id="email" type="email" class="contactUs-form-input">
+
+                        <label for="message" class="contactUs-form-label">message</label>
+                        <textarea name="message" id="message" class=" contactUs-form-input contactUs-form-input-message"></textarea>
+
+                        <button class="contactUs-form-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact us section ends -->
+
     <!-- attaching script file -->
     <script src="./script.js"></script>
 </body>
