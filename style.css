@@ -79,7 +79,7 @@ a{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 99;
 }
 
 .navigation-section::before{
@@ -470,3 +470,97 @@ nav{
 }
 
 /* contactUs section ends */
+
+/* footer section starts */
+
+.footer-section{
+    width: 100%;
+    border-top: 1px solid #000;
+}
+
+footer{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-logo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-logo{
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+.footer-social{
+    display: flex;
+}
+
+.footer-social-icon{
+    width: 3.5em;
+    margin: 0 0.5em; 
+    transition: 0.3s ease-out;
+}
+
+.footer-social-icon:hover{
+    transform: translateY(-0.5em);
+}
+
+.footer-info-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-subscribe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-subscribe-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.footer-subscribe-form{
+    display: flex;
+    height: 3em;
+    width: 90%;
+}
+
+.footer-subscribe-input{
+    height: 100%;
+    width: 70%;
+    padding: 0.5em;
+    font-size: 1.3rem;
+}
+
+.footer-subscribe-btn{
+    height: 100%;
+    background-color: var(--secondary-color);
+    padding: 0.5em 2em;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s color ease-out;
+}
+
+.footer-subscribe-btn:hover{
+    background-color: var(--tertiary-color);
+    box-shadow: 3px 3px 10px rgba(0,150,100,0.3);
+}
+
+
+/* footer section ends */
