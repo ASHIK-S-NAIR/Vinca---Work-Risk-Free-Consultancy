@@ -7,3 +7,19 @@ window.addEventListener('scroll', () => {
         navigationSection.classList.remove('sticky');
     }
 })
+
+// nav toggler
+const navToggler = document.querySelector(".nav-toggler");
+const navSection = document.querySelector(".nav-section");
+navToggler.addEventListener('click', () => {
+    navToggler.classList.toggle("active");
+    navSection.classList.toggle("open");
+})
+
+// nav select
+document.addEventListener('click', (e) => {
+    if(e.target.closest(".nav-li")){
+        navToggler.classList.toggle("active");
+        navSection.classList.toggle("open");
+    } 
+})
