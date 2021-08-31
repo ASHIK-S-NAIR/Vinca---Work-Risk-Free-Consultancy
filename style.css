@@ -555,6 +555,7 @@ footer{
     border-radius: 5px;
     color: #fff;
     transition: 0.3s color ease-out;
+    margin-left: 0.2em;
 }
 
 .footer-subscribe-btn:hover{
