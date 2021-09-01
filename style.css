@@ -17,10 +17,6 @@
     font-family: 'Manrope', sans-serif;
 }
 
-body{
-    transform: none;
-}
-
 html{
     scroll-behavior: smooth;
 }
@@ -577,6 +573,15 @@ footer{
 /* tablet responsive starts */
 
 @media only screen and (max-width: 768px){
+
+    /* global settings starts */
+
+    .container{
+        width: 86%;
+    }
+
+    /* global settings ends */
+
     /* navigation section starts */
 
     .navigation-section{
@@ -683,16 +688,7 @@ footer{
 
 /* hero section starts */
 
-.container{
-    width: 86%;
-}
-
-.hero-section{
-    width: 100%;
-}
-
 .hero{
-    position: relative;
     height: auto;
     padding-top: 1.3em;
     display:flex;
@@ -701,32 +697,24 @@ footer{
 
 .hero-info{
    text-align: center;
-   margin-bottom: 1em;
+   margin-bottom: 0.5em;
 }
 
 .hero-bg{
     position: static;
-    top: 0;
-    right: -2em;
     width: 100%;
     margin-bottom: 2em;
 }
 
 .hero-subheading{
-    font-weight: 300;
-    margin-bottom: 0.8em;
-    word-spacing: 0.3rem;
-    font-family: var(--cursive-font);
     font-size: 1.3rem;
     font-weight: 600;
 }
 
 .hero-heading{
     font-size: 4.5rem;
-    font-weight: 300;
     line-height: 4.5rem;
     margin-bottom: 0.4em;
-    color: var(--main-color);
 }
 
 .hero-heading br{
@@ -736,29 +724,12 @@ footer{
 .hero-mainLine{
     font-size: 1.3rem;
     width: 100%;
-    line-height: 2rem;
-    word-spacing: 3px;
-    margin-bottom: 1.5em;
-}
-
-.hero-mainLine span{
-    font-weight: 1000;
 }
 
 .hero-cta{
-    background-color: var(--secondary-color);
     padding: 0.6em 2em;
     font-size: 1.5rem;
-    font-weight: 800;
-    border-radius: 5px;
-    color: #fff;
-    transition: 0.3s color ease-out;
     width: 85%;
-}
-
-.hero-cta:hover{
-    background-color: var(--tertiary-color);
-    box-shadow: 3px 3px 10px rgba(0,150,100,0.3);
 }
 
 /* hero section ends */
