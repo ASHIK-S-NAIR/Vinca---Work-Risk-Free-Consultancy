@@ -767,6 +767,85 @@ footer{
 
 /* services section ends */
 
+/* aboutUs section starts */
+
+.aboutUs{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    margin-bottom: 2em;
+}
+
+.aboutUs-img{
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.aboutUs-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 0em;
+}
+
+.aboutUs-timeline{
+    width: 100%;
+    position: static;
+}
+
+.aboutUs-timeline::before{
+    display: none;
+}
+
+.aboutUs-timeline-li{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+.aboutUs-timeline-li::before{
+    display: none;
+}
+
+.aboutUs-timeline-li:nth-child(odd){
+    float: none;
+    clear: none;
+    border-radius: 30px 0 30px 30px;
+    transform: none;
+    background: linear-gradient(90deg, rgb(37, 77, 220), rgb(53,98,255));
+}
+
+.aboutUs-timeline-li:nth-child(odd)::before{
+    position: static;
+    transform: none;
+}
+
+.aboutUs-timeline-li:nth-child(even){
+    float: none;
+    clear: none;
+    border-radius: 0px 30px 30px 30px;
+    transform: none;
+    background: linear-gradient(90deg, rgb(53,98,255), rgb(37, 77, 220));
+}
+
+.aboutUs-timeline-li:nth-child(even)::before{
+     position: static;
+     transform: none;
+}
+
+.aboutUs-timeline-heading{
+    margin-bottom: 0.1em;
+}
+
+.aboutUs-timeline-p{
+    line-height: 1.5rem;
+}
+
+/* aboutUs section ends */
+
 }
 
 /* tablet responsive ends */
