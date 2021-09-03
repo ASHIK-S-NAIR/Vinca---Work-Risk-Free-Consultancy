@@ -583,7 +583,7 @@ footer{
     }
     
     .heading{
-        font-size: 4.5rem;
+        font-size: 4rem;
         margin-bottom: 0.4em;
     }
     
@@ -845,6 +845,56 @@ footer{
 }
 
 /* aboutUs section ends */
+
+
+/* contactUs section starts */
+
+.contactUs{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+    background: none;
+    position: static;
+    margin-bottom: 3em;
+}
+
+.contactUs::before{
+    display: none;
+}
+
+.contactUs-info{
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.contactUs-p{
+    font-size: 1.1rem;
+}
+
+.contactUs-btn{
+    width: 100%;
+}
+
+.contactUs-form{
+    width: 100%;
+    padding: 2em 1em;
+}
+
+.contactUs-form-input{
+    height: 2.5em;
+    line-height: 2rem;
+    padding: 0.5em;
+}
+
+.contactUs-form-input-message{
+    height: 10em;
+}
+
+.contactUs-form-btn{
+    width: 100%;
+}
+
+/* contactUs section ends */
 
 }
 
