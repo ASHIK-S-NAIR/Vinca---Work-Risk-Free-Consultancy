@@ -896,6 +896,52 @@ footer{
 
 /* contactUs section ends */
 
+/* footer section starts */
+
+.footer-section{
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+footer{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4em;
+}
+
+.footer-logo{
+    margin-bottom: 0.5em;
+    font-size: 2.3rem;
+}
+
+.footer-social-icon{
+    width: 4.5em;
+    margin: 0 0.1em; 
+}
+
+.footer-subscribe-title{
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.footer-subscribe-form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.footer-subscribe-input{
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.footer-subscribe-btn{
+    width: 85%;
+    margin-left: 0;
+}
+
+/* footer section ends */
+
 }
 
 /* tablet responsive ends */
