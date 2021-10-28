@@ -22,7 +22,7 @@ html{
 }
 
 .container{
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -589,6 +589,17 @@ footer{
 
 /* DDA section ends */
 
+
+/* big screen starts */
+
+@media screen and (min-width: 1367px){
+    :root{
+      --max-width: 1300px;
+    }
+  }
+  
+  /* big screen ends */
+
 /* tablet responsive starts */
 
 @media only screen and (max-width: 768px){
@@ -605,7 +616,7 @@ footer{
     }
     
     .heading{
-        font-size: 4rem;
+        font-size: 3.5rem;
         margin-bottom: 0.4em;
     }
     
