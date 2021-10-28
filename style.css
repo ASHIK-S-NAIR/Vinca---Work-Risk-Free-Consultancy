@@ -597,6 +597,7 @@ footer{
 
     .container{
         width: 86%;
+        height: auto;
     }
 
     .section{
@@ -744,6 +745,7 @@ footer{
     .hero-subheading{
         font-size: 1.3rem;
         font-weight: 600;
+        margin: 0 auto;
     }
 
     .hero-heading{
@@ -791,6 +793,7 @@ footer{
 /* aboutUs section starts */
 
     .aboutUs{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
