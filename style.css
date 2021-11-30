@@ -591,15 +591,6 @@ footer{
 /* DDA section ends */
 
 
-/* big screen starts */
-
-@media screen and (min-width: 1367px){
-    :root{
-      --max-width: 1300px;
-    }
-  }
-  
-  /* big screen ends */
 
 /* tablet responsive starts */
 
