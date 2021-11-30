@@ -22,8 +22,8 @@ html{
 }
 
 .container{
-    max-width: 80%;
     margin: auto;
+    width: min(80%, 1250px);
 }
 
 .row{
@@ -148,7 +148,8 @@ nav{
     align-items: center;
     justify-content: center;
     grid-template-columns: 40% 60%;
-    height: 100vh;
+    height: auto;
+    padding: 1em 0 4em 0;
 }
 
 .hero-bg{
