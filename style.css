@@ -495,7 +495,7 @@ footer{
 .footer-logo-section{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
 }
@@ -531,7 +531,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer-subscribe-title{
@@ -938,14 +938,23 @@ footer{
         grid-gap: 4em;
     }
 
+    .footer-logo-section{
+        align-items: center;
+    }
+
     .footer-logo{
         margin-bottom: 0.5em;
         font-size: 2.3rem;
+        text-align: center;
     }
 
     .footer-social-icon{
         width: 4.5em;
         margin: 0 0.1em; 
+    }
+
+    .footer-subscribe{
+        align-items: center;
     }
 
     .footer-subscribe-title{
